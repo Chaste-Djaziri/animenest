@@ -4,7 +4,7 @@ import React from 'react';
 import Navbarcomponent from '@/components/navbar/Navbar';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faServer, faDatabase, faCloud, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
 
@@ -70,7 +70,7 @@ const About = () => {
                 className="md:w-1/3 relative overflow-hidden"
               >
                 <img 
-                  src="/creator.jpg" 
+                  src="/chaste.jpg" 
                   alt="ANINEST Creator" 
                   className="w-full h-full object-cover object-center"
                 />
@@ -96,9 +96,8 @@ const About = () => {
                   className="flex gap-6"
                 >
                   {[
-                    { icon: faGithub, url: "https://github.com/ANINEST", label: "GitHub" },
-                    { icon: faTwitter, url: "https://twitter.com/ANINEST", label: "Twitter" },
-                    { icon: faDiscord, url: "https://discord.gg/ANINEST", label: "Discord" }
+                    { icon: faGithub, url: "https://github.com/chaste-djaziri", label: "GitHub" },
+                    { icon: faInstagram, url: "https://www.instagram.com/chaste_djaziri", label: "Instagram" }
                   ].map((item, index) => (
                     <a 
                       key={index}
@@ -195,10 +194,10 @@ const About = () => {
                 question: "How often is new content added?", 
                 answer: "We update our library regularly with new releases and classics. New episodes of seasonal anime are typically added within 24 hours of their original broadcast."
               },
-              { 
-                question: "Can I download anime for offline viewing?", 
-                answer: "Premium subscribers can download select titles for offline viewing on our mobile applications."
-              }
+              // { 
+              //   question: "Can I download anime for offline viewing?", 
+              //   answer: "Premium subscribers can download select titles for offline viewing on our mobile applications."
+              // }
             ].map((faq, index) => (
               <motion.div
                 key={index}
