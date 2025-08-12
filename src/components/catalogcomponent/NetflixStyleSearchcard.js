@@ -91,7 +91,7 @@ function NetflixStyleSearchcard({ searchvalue, selectedYear, seasonvalue, format
             {/* No results state */}
             {!loading && searchdata && searchdata.length === 0 && (
                 <div className="flex flex-col items-center justify-center py-16 text-center bg-black">
-                    <div className="text-4xl font-bold text-[#1a365d] mb-4">No Results Found</div>
+                    <div className="text-4xl font-bold text-[#ff9650] mb-4">No Results Found</div>
                     <p className="text-xl text-[#999] mb-6">
                         We couldn't find any anime matching your search for{" "}
                         <span className="text-white font-medium">"{searchvalue}"</span>
@@ -128,7 +128,7 @@ function NetflixStyleSearchcard({ searchvalue, selectedYear, seasonvalue, format
                                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                         {/* Play button */}
                                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                            <div className="w-12 h-12 rounded-full bg-[#1a365d]/90 backdrop-blur-sm flex items-center justify-center border border-[#1a365d] text-white">
+                                            <div className="w-12 h-12 rounded-full bg-[#ff9650]/90 backdrop-blur-sm flex items-center justify-center border border-[#ff9650] text-white">
                                                 <FontAwesomeIcon icon={faPlay} className="ml-1" />
                                             </div>
                                         </div>
@@ -214,7 +214,7 @@ function NetflixStyleSearchcard({ searchvalue, selectedYear, seasonvalue, format
                         classNames={{
                             wrapper: "gap-0 overflow-visible",
                             item: "bg-[#111] text-white border-[#222] hover:bg-[#222]",
-                            cursor: "bg-[#1a365d] text-white font-medium border-[#1a365d]",
+                            cursor: "bg-[#ff9650] text-white font-medium border-[#ff9650]",
                         }}
                     />
                 </div>

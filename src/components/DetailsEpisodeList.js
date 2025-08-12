@@ -267,7 +267,7 @@ function DetailsEpisodeList({ data, id, progress, setUrl }) {
               )}&ep=${episode?.number}&type=${subtype}`}
               key={episode?.id || episode?.episodeId}
               className={`group flex flex-col relative transition-all duration-300 hover:scale-105 ${
-                isNext ? 'ring-2 ring-purple-600' : ''
+                isNext ? 'ring-2 ring-orange-600' : ''
               }`}
             >
               <div className="aspect-video relative overflow-hidden rounded-md bg-black">
@@ -282,7 +282,7 @@ function DetailsEpisodeList({ data, id, progress, setUrl }) {
                   <span className="text-white text-sm font-medium">EP {episode.number}</span>
                 </div>
                 {isNext && (
-                  <div className="absolute right-2 top-2 bg-purple-600 text-white text-xs px-2 py-0.5 rounded-full">
+                  <div className="absolute right-2 top-2 bg-orange-600 text-white text-xs px-2 py-0.5 rounded-full">
                     Next
                   </div>
                 )}
@@ -302,7 +302,7 @@ function DetailsEpisodeList({ data, id, progress, setUrl }) {
                 )}
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#121212]">
                   <div 
-                    className={`h-full ${watched ? 'bg-purple-600' : 'bg-transparent'}`}
+                    className={`h-full ${watched ? 'bg-orange-600' : 'bg-transparent'}`}
                     style={{ width: watched ? '100%' : '0%' }}
                   ></div>
                 </div>
@@ -337,7 +337,7 @@ function DetailsEpisodeList({ data, id, progress, setUrl }) {
               <div 
                 className={`relative flex items-center justify-center h-10 rounded-md transition ${
                   isNext 
-                    ? 'bg-purple-600 text-white' 
+                    ? 'bg-orange-600 text-white' 
                     : watched
                       ? 'bg-[#333] text-gray-300'
                       : episode.isFiller 
@@ -347,7 +347,7 @@ function DetailsEpisodeList({ data, id, progress, setUrl }) {
               >
                 <span>{episode.number}</span>
                 {watched && (
-                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-purple-600"></div>
+                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-600"></div>
                 )}
               </div>
             </Link>
@@ -372,7 +372,7 @@ function DetailsEpisodeList({ data, id, progress, setUrl }) {
               )}&ep=${episode?.number}&type=${subtype}`}
               key={episode?.id || episode?.episodeId}
               className={`group flex flex-row transition-all duration-300 hover:bg-[#121212] rounded-xl overflow-hidden ${
-                isNext ? 'ring-1 ring-purple-600' : ''
+                isNext ? 'ring-1 ring-orange-600' : ''
               }`}
             >
               <div className="relative w-[180px] h-[100px]">
@@ -403,7 +403,7 @@ function DetailsEpisodeList({ data, id, progress, setUrl }) {
                   EP {episode.number}
                 </div>
                 {isNext && (
-                  <div className="absolute top-2 right-2 bg-purple-600 text-white text-xs px-2 py-0.5 rounded-full">
+                  <div className="absolute top-2 right-2 bg-orange-600 text-white text-xs px-2 py-0.5 rounded-full">
                     Next
                   </div>
                 )}
@@ -414,7 +414,7 @@ function DetailsEpisodeList({ data, id, progress, setUrl }) {
                 )}
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#121212]">
                   <div 
-                    className={`h-full ${watched ? 'bg-purple-600' : 'bg-transparent'}`}
+                    className={`h-full ${watched ? 'bg-orange-600' : 'bg-transparent'}`}
                     style={{ width: watched ? '100%' : '0%' }}
                   ></div>
                 </div>
@@ -593,7 +593,7 @@ function DetailsEpisodeList({ data, id, progress, setUrl }) {
           </div>
           <div className="w-full bg-[#1a1a1a] rounded-full h-2.5">
             <div 
-              className="bg-purple-600 h-2.5 rounded-full" 
+              className="bg-orange-600 h-2.5 rounded-full" 
               style={{ width: `${data?.episodes ? (progress / data.episodes) * 100 : 0}%` }}
             ></div>
           </div>
@@ -603,7 +603,7 @@ function DetailsEpisodeList({ data, id, progress, setUrl }) {
       {/* Legend */}
       <div className="flex flex-wrap gap-3 mb-4 text-xs text-gray-400">
         <div className="flex items-center gap-1">
-          <div className="w-3 h-3 bg-purple-600 rounded-full"></div>
+          <div className="w-3 h-3 bg-orange-600 rounded-full"></div>
           <span>Next episode</span>
         </div>
         <div className="flex items-center gap-1">
@@ -637,7 +637,7 @@ function DetailsEpisodeList({ data, id, progress, setUrl }) {
             color="secondary"
             variant="bordered"
             classNames={{
-              cursor: "bg-purple-600",
+              cursor: "bg-orange-600",
               item: "text-white bg-[#121212] hover:bg-[#1a1a1a]",
               prev: "bg-[#121212] hover:bg-[#1a1a1a]",
               next: "bg-[#121212] hover:bg-[#1a1a1a]"

@@ -119,7 +119,7 @@ export default function Feedbackform({ isOpen, onOpenChange }) {
                                 <Button color="danger" variant="flat" onPress={onClose}>
                                     Cancel
                                 </Button>
-                                <Button className={`bg-[#1a365d] ${!title || !description ? 'pointer-events-none' : ''}`} onClick={handleSubmit} onPress={onClose} >
+                                <Button className={`bg-[#ff9650] ${!title || !description ? 'pointer-events-none' : ''}`} onClick={handleSubmit} onPress={onClose} >
                                     Submit
                                 </Button>
                             </ModalFooter>

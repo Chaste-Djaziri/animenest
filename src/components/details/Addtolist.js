@@ -258,7 +258,7 @@ function Addtolist({ list, eplength, Handlelist, session, id, setList }) {
                     <Button color="danger" radius='md' size="sm" onClick={deleteList} className={`${list && list?.status!==null ? 'flex' : 'hidden'}`}>
                         Delete
                     </Button>
-                    <Button className='bg-[#1a365d]' type='submit' radius="md" size="sm" isDisabled={!status ? true : false}>
+                    <Button className='bg-[#ff9650]' type='submit' radius="md" size="sm" isDisabled={!status ? true : false}>
                         Save
                     </Button>
                 </div>

@@ -16,12 +16,12 @@ import { AuthProvider } from './SessionProvider';
 const inter = Inter({ subsets: ['latin'] })
 // const myfont = localFont({ src: "../static-fonts/28 Days Later.ttf" })
 
-const APP_NAME = "SkyAnime";
-const APP_DEFAULT_TITLE = "SkyAnime - Watch Anime Online";
-const APP_DESCRIPTION = "Explore a vast collection of anime on SkyAnime, your go-to destination for streaming the latest and classic anime series. Immerse yourself in captivating storylines, vibrant animation, and diverse genres. Discover a world of entertainment at your fingertips with SkyAnime, where every episode is an adventure.";
+const APP_NAME = "ANINEST";
+const APP_DEFAULT_TITLE = "ANINEST - Watch Anime Online";
+const APP_DESCRIPTION = "Explore a vast collection of anime on ANINEST, your go-to destination for streaming the latest and classic anime series. Immerse yourself in captivating storylines, vibrant animation, and diverse genres. Discover a world of entertainment at your fingertips with ANINEST, where every episode is an adventure.";
 
 export const metadata = {
-  metadataBase: new URL('https://skyanime.live'),
+  metadataBase: new URL('https://ANINEST.live'),
   applicationName: APP_NAME,
   title: APP_DEFAULT_TITLE,
   description: APP_DESCRIPTION,
@@ -48,7 +48,7 @@ export const metadata = {
     'latest dubbed anime',
     'subbed anime streaming',
     'dubbed anime streaming',
-    'skyanime latest anime',
+    'ANINEST latest anime',
   ],
   manifest: "/manifest.json",
   appleWebApp: {
@@ -102,7 +102,7 @@ export default async function RootLayout({ children }) {
             {children}
           </NextUiProvider>
         </AuthProvider>
-        {/* <NextTopLoader color="#1a365d" className="z-[99999]" /> */}
+        {/* <NextTopLoader color="#ff9650" className="z-[99999]" /> */}
         <Toaster richColors={true} closeButton={true} theme="dark" />
         <Search />
         <Changelogs />

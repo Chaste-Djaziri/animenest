@@ -35,7 +35,7 @@ function HomeNewsCard({ newsItems }) {
           <span className="h-6 md:h-8 rounded-md w-[.35rem] md:w-[.3rem] bg-white"></span>
           <h2 className="text-xl md:text-2xl font-medium">Latest News</h2>
         </div>
-        <Link href="/news" className="flex items-center gap-1 text-sm text-[#1a365d] hover:underline">
+        <Link href="/news" className="flex items-center gap-1 text-sm text-[#ff9650] hover:underline">
           <span>View All</span>
           <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
         </Link>
@@ -65,7 +65,7 @@ function HomeNewsCard({ newsItems }) {
               </div>
               
               <div className="p-3 flex flex-col flex-grow">
-                <h3 className="text-base font-medium text-white mb-1 line-clamp-2 group-hover:text-[#1a365d] transition-colors">
+                <h3 className="text-base font-medium text-white mb-1 line-clamp-2 group-hover:text-[#ff9650] transition-colors">
                   {item.title?.english || item.title?.romaji}
                 </h3>
                 

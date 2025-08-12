@@ -256,7 +256,7 @@ function EnhancedEpisodeList({ id, data, onprovider, setwatchepdata, epnum }) {
               )}&ep=${episode?.number}&type=${subtype}`}
               key={episode?.id || episode?.episodeId}
               className={`flex flex-col relative transition-all duration-300 hover:scale-105 ${
-                isCurrentEp ? 'ring-2 ring-[#6E00FF] scale-95 pointer-events-none' : ''
+                isCurrentEp ? 'ring-2 ring-[#ff9650] scale-95 pointer-events-none' : ''
               }`}
             >
               <div className="aspect-video relative overflow-hidden rounded-lg bg-[#18181b]">
@@ -309,7 +309,7 @@ function EnhancedEpisodeList({ id, data, onprovider, setwatchepdata, epnum }) {
               <div 
                 className={`flex items-center justify-center h-10 rounded-md ${
                   isCurrentEp 
-                    ? 'bg-[#6E00FF] text-white' 
+                    ? 'bg-[#ff9650] text-white' 
                     : episode.isFiller 
                       ? 'bg-[#f9a825]/20 hover:bg-[#f9a825]/40 text-white' 
                       : 'bg-[#27272a] hover:bg-[#3f3f46] text-gray-300'
@@ -337,7 +337,7 @@ function EnhancedEpisodeList({ id, data, onprovider, setwatchepdata, epnum }) {
               )}&ep=${episode?.number}&type=${subtype}`}
               key={episode?.id || episode?.episodeId}
               className={`flex flex-row transition-all duration-300 hover:bg-[#27272a] rounded-xl overflow-hidden ${
-                isCurrentEp ? 'ring-1 ring-[#6E00FF] opacity-80 pointer-events-none' : ''
+                isCurrentEp ? 'ring-1 ring-[#ff9650] opacity-80 pointer-events-none' : ''
               }`}
             >
               <div className="relative w-[180px] h-[100px]">
@@ -415,7 +415,7 @@ function EnhancedEpisodeList({ id, data, onprovider, setwatchepdata, epnum }) {
                         key={`sub-${item.providerId}`}
                         className={`px-2.5 py-1 text-xs rounded-md transition-colors ${
                           item.providerId === defaultProvider && subtype === 'sub'
-                            ? 'bg-[#6E00FF] text-white'
+                            ? 'bg-[#ff9650] text-white'
                             : 'bg-[#27272a] text-gray-300 hover:bg-[#3f3f46]'
                         }`}
                         onClick={() => handleProviderChange(item.providerId, "sub")}
@@ -441,7 +441,7 @@ function EnhancedEpisodeList({ id, data, onprovider, setwatchepdata, epnum }) {
                         key={`dub-${item.providerId}`}
                         className={`px-2.5 py-1 text-xs rounded-md transition-colors ${
                           item.providerId === defaultProvider && subtype === 'dub'
-                            ? 'bg-[#6E00FF] text-white'
+                            ? 'bg-[#ff9650] text-white'
                             : 'bg-[#27272a] text-gray-300 hover:bg-[#3f3f46]'
                         }`}
                         onClick={() => handleProviderChange(item.providerId, "dub")}
@@ -570,7 +570,7 @@ function EnhancedEpisodeList({ id, data, onprovider, setwatchepdata, epnum }) {
                   color="secondary"
                   variant="bordered"
                   classNames={{
-                    cursor: "bg-[#6E00FF]",
+                    cursor: "bg-[#ff9650]",
                     item: "text-white bg-[#27272a] hover:bg-[#3f3f46]",
                     prev: "bg-[#27272a] hover:bg-[#3f3f46]",
                     next: "bg-[#27272a] hover:bg-[#3f3f46]"

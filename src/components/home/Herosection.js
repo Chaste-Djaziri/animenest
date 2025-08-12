@@ -206,7 +206,7 @@ function Herosection({ data }) {
       <div className="absolute inset-y-0 left-0 z-30 flex items-center pl-2 sm:pl-4">
         <button 
           onClick={() => navigateCarousel('prev')} 
-          className="bg-black/60 hover:bg-[#1a365d]/80 text-white w-10 h-14 sm:w-12 sm:h-16 flex items-center justify-center transition-all duration-300 rounded-md focus:outline-none border border-white/20 touch-manipulation"
+          className="bg-black/60 hover:bg-[#ff9650]/80 text-white w-10 h-14 sm:w-12 sm:h-16 flex items-center justify-center transition-all duration-300 rounded-md focus:outline-none border border-white/20 touch-manipulation"
           disabled={isNavigating}
           aria-label="Previous anime"
           type="button"
@@ -220,7 +220,7 @@ function Herosection({ data }) {
       <div className="absolute inset-y-0 right-0 z-30 flex items-center pr-2 sm:pr-4">
         <button 
           onClick={() => navigateCarousel('next')} 
-          className="bg-black/60 hover:bg-[#1a365d]/80 text-white w-10 h-14 sm:w-12 sm:h-16 flex items-center justify-center transition-all duration-300 rounded-md focus:outline-none border border-white/20 touch-manipulation"
+          className="bg-black/60 hover:bg-[#ff9650]/80 text-white w-10 h-14 sm:w-12 sm:h-16 flex items-center justify-center transition-all duration-300 rounded-md focus:outline-none border border-white/20 touch-manipulation"
           disabled={isNavigating}
           aria-label="Next anime"
           type="button"
@@ -254,7 +254,7 @@ function Herosection({ data }) {
         {/* Trending badge and maturity rating */}
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center">
-            <div className="bg-[#1a365d] text-white text-xs font-bold px-2 py-1 rounded mr-2">
+            <div className="bg-[#ff9650] text-white text-xs font-bold px-2 py-1 rounded mr-2">
               TOP {currentIndex + 1}
             </div>
             <span className="text-white text-sm font-medium">TRENDING NOW</span>
@@ -273,7 +273,7 @@ function Herosection({ data }) {
           <h1 className="text-white text-2xl md:text-4xl font-bold leading-tight drop-shadow-lg">
             {populardata?.title?.[animetitle] || populardata?.title?.romaji}
           </h1>
-          <div className="absolute -bottom-2 left-0 w-16 h-1 bg-[#1a365d] rounded"></div>
+          <div className="absolute -bottom-2 left-0 w-16 h-1 bg-[#ff9650] rounded"></div>
         </div>
         
         {/* Enhanced metadata row with better visual hierarchy */}
@@ -307,7 +307,7 @@ function Herosection({ data }) {
         </div>
         
         {/* Enhanced description with better styling - reduced size */}
-        <div className="backdrop-blur-sm bg-black/20 p-2 rounded mb-4 border-l-2 border-[#1a365d]">
+        <div className="backdrop-blur-sm bg-black/20 p-2 rounded mb-4 border-l-2 border-[#ff9650]">
           <p className="text-white/90 text-xs md:text-sm line-clamp-2 italic">
             {populardata?.description?.replace(/<.*?>/g, '')}
           </p>
@@ -317,7 +317,7 @@ function Herosection({ data }) {
         <div className="flex items-center gap-2">
           <Link href={`/anime/info/${populardata?.id}`}>
             <Button 
-              className="bg-[#1a365d] text-white hover:bg-[#14294d] font-medium rounded-md px-4 py-2 flex items-center gap-1 shadow-md transition-transform hover:scale-105 text-sm"
+              className="bg-[#ff9650] text-white hover:bg-[#14294d] font-medium rounded-md px-4 py-2 flex items-center gap-1 shadow-md transition-transform hover:scale-105 text-sm"
               startContent={
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
                   <path fillRule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clipRule="evenodd" />
@@ -380,7 +380,7 @@ function Herosection({ data }) {
           {/* Enhanced episode count or status indicator */}
           {populardata?.nextAiringEpisode && (
             <div className="flex items-center">
-              <div className="bg-[#1a365d] text-white text-xs px-2 py-1 mr-2 rounded-sm flex items-center">
+              <div className="bg-[#ff9650] text-white text-xs px-2 py-1 mr-2 rounded-sm flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-3 h-3 mr-1">
                   <path d="M5.85 3.5a.75.75 0 00-1.117-1 9.719 9.719 0 00-2.348 4.876.75.75 0 001.479.248A8.219 8.219 0 015.85 3.5zM19.267 2.5a.75.75 0 10-1.118 1 8.22 8.22 0 011.987 4.124.75.75 0 001.48-.248A9.72 9.72 0 0019.266 2.5z" />
                   <path fillRule="evenodd" d="M12 2.25A6.75 6.75 0 005.25 9v.75a8.217 8.217 0 01-2.119 5.52.75.75 0 00.298 1.206c1.544.57 3.16.99 4.831 1.243a3.75 3.75 0 107.48 0 24.583 24.583 0 004.83-1.244.75.75 0 00.298-1.205 8.217 8.217 0 01-2.118-5.52V9A6.75 6.75 0 0012 2.25zM9.75 18c0-.034 0-.067.002-.1a25.05 25.05 0 004.496 0l.002.1a2.25 2.25 0 11-4.5 0z" clipRule="evenodd" />
@@ -395,7 +395,7 @@ function Herosection({ data }) {
           
           {/* Enhanced Studios display */}
           {populardata?.studios?.nodes && populardata.studios.nodes.length > 0 && (
-            <div className="flex items-center text-xs text-white/80 bg-black/20 backdrop-blur-sm px-3 py-2 rounded border-r-2 border-[#1a365d]">
+            <div className="flex items-center text-xs text-white/80 bg-black/20 backdrop-blur-sm px-3 py-2 rounded border-r-2 border-[#ff9650]">
               <span className="mr-2 font-semibold">Studios:</span>
               <div className="flex flex-wrap gap-1">
                 {populardata.studios.nodes.map((studio, index) => (

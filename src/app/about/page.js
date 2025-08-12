@@ -28,14 +28,14 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="text-4xl md:text-5xl font-bold text-white mb-2"
           >
-            About SkyAnime
+            About ANINEST
           </motion.h1>
           
           <motion.div 
             initial={{ opacity: 0, width: 0 }}
             animate={{ opacity: 1, width: 48 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="h-1 bg-[#1a365d] mb-8"
+            className="h-1 bg-[#ff9650] mb-8"
           />
 
           <motion.p
@@ -44,7 +44,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl"
           >
-            Welcome to SkyAnime, your premier destination for anime streaming. 
+            Welcome to ANINEST, your premier destination for anime streaming. 
             We're dedicated to providing high-quality anime content with both subbed and dubbed options, 
             ensuring an exceptional viewing experience for all anime enthusiasts.
           </motion.p>
@@ -71,7 +71,7 @@ const About = () => {
               >
                 <img 
                   src="/creator.jpg" 
-                  alt="SkyAnime Creator" 
+                  alt="ANINEST Creator" 
                   className="w-full h-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60 md:opacity-0"></div>
@@ -96,16 +96,16 @@ const About = () => {
                   className="flex gap-6"
                 >
                   {[
-                    { icon: faGithub, url: "https://github.com/skyanime", label: "GitHub" },
-                    { icon: faTwitter, url: "https://twitter.com/skyanime", label: "Twitter" },
-                    { icon: faDiscord, url: "https://discord.gg/skyanime", label: "Discord" }
+                    { icon: faGithub, url: "https://github.com/ANINEST", label: "GitHub" },
+                    { icon: faTwitter, url: "https://twitter.com/ANINEST", label: "Twitter" },
+                    { icon: faDiscord, url: "https://discord.gg/ANINEST", label: "Discord" }
                   ].map((item, index) => (
                     <a 
                       key={index}
                       href={item.url} 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="flex items-center gap-2 text-gray-400 hover:text-[#1a365d] transition-colors duration-300"
+                      className="flex items-center gap-2 text-gray-400 hover:text-[#ff9650] transition-colors duration-300"
                     >
                       <FontAwesomeIcon icon={item.icon} />
                       <span>{item.label}</span>
@@ -159,7 +159,7 @@ const About = () => {
                 className="bg-gray-900/80 p-5 rounded hover:bg-gray-800/90 transition-colors duration-300 group"
               >
                 <div className="flex items-center gap-4 mb-3">
-                  <div className="text-[#1a365d]">
+                  <div className="text-[#ff9650]">
                     <FontAwesomeIcon icon={tech.icon} className="text-xl" />
                   </div>
                   <h3 className="text-lg font-medium text-white">
@@ -188,8 +188,8 @@ const About = () => {
           <div className="space-y-4">
             {[
               { 
-                question: "Is SkyAnime free to use?", 
-                answer: "Yes, SkyAnime is completely free to use. We offer premium subscriptions with additional features, but our core content is available to all users."
+                question: "Is ANINEST free to use?", 
+                answer: "Yes, ANINEST is completely free to use. We offer premium subscriptions with additional features, but our core content is available to all users."
               },
               { 
                 question: "How often is new content added?", 

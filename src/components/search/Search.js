@@ -104,7 +104,7 @@ function Search() {
                                         </div>
                                     </div>
                                     <div className="flex items-center bg-black border-b border-[#333] p-1">
-                                        <div className="bg-[#1a365d] rounded-full p-1.5 ml-3 mr-2">
+                                        <div className="bg-[#ff9650] rounded-full p-1.5 ml-3 mr-2">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 className="h-5 w-5 text-white"
@@ -138,7 +138,7 @@ function Search() {
                                     </div>
                                     <Combobox.Options
                                         static
-                                        className="bg-black rounded-b-lg max-h-[50dvh] overflow-y-auto flex flex-col scrollbar-thin scrollbar-thumb-[#1a365d] scrollbar-thumb-rounded border-t border-[#222]"
+                                        className="bg-black rounded-b-lg max-h-[50dvh] overflow-y-auto flex flex-col scrollbar-thin scrollbar-thumb-[#ff9650] scrollbar-thumb-rounded border-t border-[#222]"
                                     >
                                         {!loading ? (
                                             <Fragment>
@@ -160,12 +160,12 @@ function Search() {
                                                                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                                                 </div>
                                                                 <div className="flex flex-col flex-1">
-                                                                    <div className="text-base font-medium text-white group-hover:text-[#1a365d] transition-colors duration-200">
+                                                                    <div className="text-base font-medium text-white group-hover:text-[#ff9650] transition-colors duration-200">
                                                                         {item.title[animetitle] || item.title.romaji}
                                                                     </div>
                                                                     <div className="text-xs flex items-center text-[#999] mt-1 flex-wrap">
                                                                         <span className="flex items-center gap-1 bg-[#111] px-2 py-0.5 rounded mr-2 mb-1">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 text-[#1a365d]" viewBox="0 0 1664 1600"><path fill="currentColor" d="M1664 615q0 22-26 48l-363 354l86 500q1 7 1 20q0 21-10.5 35.5T1321 1587q-19 0-40-12l-449-236l-449 236q-22 12-40 12q-21 0-31.5-14.5T301 1537q0-6 2-20l86-500L25 663Q0 636 0 615q0-37 56-46l502-73L783 41q19-41 49-41t49 41l225 455l502 73q56 9 56 46" /></svg>
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 text-[#ff9650]" viewBox="0 0 1664 1600"><path fill="currentColor" d="M1664 615q0 22-26 48l-363 354l86 500q1 7 1 20q0 21-10.5 35.5T1321 1587q-19 0-40-12l-449-236l-449 236q-22 12-40 12q-21 0-31.5-14.5T301 1537q0-6 2-20l86-500L25 663Q0 636 0 615q0-37 56-46l502-73L783 41q19-41 49-41t49 41l225 455l502 73q56 9 56 46" /></svg>
                                                                             <span className="text-white">{item.averageScore / 10 || "0"}</span>
                                                                         </span>
                                                                         {item.format && (
@@ -205,7 +205,7 @@ function Search() {
                                                                 useSearchbar.setState({ Isopen: false });
                                                                 setQuery("");
                                                             }}
-                                                            className="flex w-full items-center justify-center gap-2 py-4 transition duration-300 ease-in-out cursor-pointer border-t border-[#333] bg-gradient-to-r from-[#1a365d] to-[#14294d] text-white font-medium text-base z-[5] hover:brightness-110">
+                                                            className="flex w-full items-center justify-center gap-2 py-4 transition duration-300 ease-in-out cursor-pointer border-t border-[#333] bg-gradient-to-r from-[#ff9650] to-[#14294d] text-white font-medium text-base z-[5] hover:brightness-110">
                                                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                                             </svg>

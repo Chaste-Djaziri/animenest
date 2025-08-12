@@ -27,12 +27,12 @@ function RandomRecommendationsSection({ animeList }) {
         <div className="flex items-center gap-2">
           <span className="h-6 md:h-8 rounded-md w-[.35rem] md:w-[.3rem] bg-white"></span>
           <h2 className="text-xl md:text-2xl font-medium">Discover Something New</h2>
-          <div className="flex items-center bg-[#1a365d] px-2 py-1 rounded-full ml-2 text-xs text-white">
+          <div className="flex items-center bg-[#ff9650] px-2 py-1 rounded-full ml-2 text-xs text-white">
             <FontAwesomeIcon icon={faDice} className="mr-1" />
             <span>Random Picks</span>
           </div>
         </div>
-        <Link href="/anime/catalog" className="flex items-center gap-1 text-sm text-[#1a365d] hover:underline">
+        <Link href="/anime/catalog" className="flex items-center gap-1 text-sm text-[#ff9650] hover:underline">
           <span>View All</span>
           <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
         </Link>
@@ -62,7 +62,7 @@ function RandomRecommendationsSection({ animeList }) {
                 
                 {/* Random icon */}
                 <div className="absolute top-2 left-2">
-                  <div className="bg-[#1a365d] w-7 h-7 rounded-full flex items-center justify-center">
+                  <div className="bg-[#ff9650] w-7 h-7 rounded-full flex items-center justify-center">
                     <FontAwesomeIcon icon={faRandom} className="text-white text-xs" />
                   </div>
                 </div>
@@ -71,7 +71,7 @@ function RandomRecommendationsSection({ animeList }) {
               {/* Content */}
               <div className="p-3 flex flex-col flex-grow">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="text-sm font-medium text-white line-clamp-2 group-hover:text-[#1a365d] transition-colors">
+                  <h3 className="text-sm font-medium text-white line-clamp-2 group-hover:text-[#ff9650] transition-colors">
                     {anime.title?.english || anime.title?.romaji}
                   </h3>
                   {anime.averageScore && (
@@ -89,7 +89,7 @@ function RandomRecommendationsSection({ animeList }) {
                     </span>
                   ))}
                   {anime.format && (
-                    <span className="px-2 py-0.5 bg-[#1a365d]/20 text-[#1a365d] rounded-full text-xs">
+                    <span className="px-2 py-0.5 bg-[#ff9650]/20 text-[#ff9650] rounded-full text-xs">
                       {anime.format.replace(/_/g, ' ')}
                     </span>
                   )}

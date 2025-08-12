@@ -226,7 +226,7 @@ function Player({ dataInfo, id, groupedEp, src, session, savedep, subtitles, thu
       playsInline: true,
       autoPlayback: true,
       airplay: true,
-      theme: '#1a365d',
+      theme: '#ff9650',
       lang: 'en',
       moreVideoAttr: {
         crossOrigin: 'anonymous',

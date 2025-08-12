@@ -47,10 +47,10 @@ function Footer() {
                     <div className="lg:flex lg:justify-between">
                         <div className="mb-8 lg:mb-0">
                             <Link href="/" className="flex items-center w-fit mb-4">
-                                <p className={`self-center text-4xl font-medium whitespace-nowrap dark:text-white font-['Bebas_Neue'] tracking-wider`}>SKY<span className="text-[#1a365d] text-shadow">ANIME</span></p>
+                                <p className={`self-center text-4xl font-medium whitespace-nowrap dark:text-white font-['Bebas_Neue'] tracking-wider`}>ANI<span className="text-[#ff9650] text-shadow">NEST</span></p>
                             </Link>
                             <p className="font-sans text-sm text-[#999] lg:w-[520px] leading-relaxed mb-6">
-                                The ultimate destination for anime streaming. SkyAnime does not store any files on our server, we are linked
+                                The ultimate destination for anime streaming. ANINEST does not store any files on our server, we are linked
                                 to media which is hosted on 3rd party services.
                             </p>
                             <div className="flex gap-4 mb-4">
@@ -109,7 +109,7 @@ function Footer() {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="https://skyanime.site/about" target='_blank' className="text-[#999] hover:text-white text-sm flex items-center gap-2 transition-colors">
+                                        <Link href="https://ANINEST.site/about" target='_blank' className="text-[#999] hover:text-white text-sm flex items-center gap-2 transition-colors">
                                             <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z" /></svg> About
                                         </Link>
                                     </li>
@@ -132,13 +132,13 @@ function Footer() {
                                         onChange={handleToggle}
                                     />
                                 )}
-                                <div className="w-[50px] h-6 flex items-center bg-[#333] rounded-full peer-checked:bg-[#1a365d] transition-colors after:flex after:items-center after:justify-center peer after:content-['JP'] peer-checked:after:content-['EN'] peer-checked:after:translate-x-full after:absolute after:bg-white after:rounded-full after:h-5 after:w-5 after:mx-0.5 after:transition-all after:text-[10px] after:font-bold after:text-black">
+                                <div className="w-[50px] h-6 flex items-center bg-[#333] rounded-full peer-checked:bg-[#ff9650] transition-colors after:flex after:items-center after:justify-center peer after:content-['JP'] peer-checked:after:content-['EN'] peer-checked:after:translate-x-full after:absolute after:bg-white after:rounded-full after:h-5 after:w-5 after:mx-0.5 after:transition-all after:text-[10px] after:font-bold after:text-black">
                                 </div>
                             </label>
                         </div>
                     </div>
                     <div className="text-center lg:text-right">
-                        <p>© {year} <Link href="/" className="text-[#1a365d] hover:text-white transition-colors">SKYANIME™</Link> | Made with ❤️ by <span className="font-medium text-white">Rishab</span></p>
+                        <p>© {year} <Link href="/" className="text-[#ff9650] hover:text-white transition-colors">ANINEST™</Link> | Made with ❤️ by <span className="font-medium text-white">CHASTE DJAZIRI</span></p>
                     </div>
                 </div>
             </footer>

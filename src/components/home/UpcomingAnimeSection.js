@@ -38,7 +38,7 @@ function UpcomingAnimeSection({ animeList }) {
           <span className="h-6 md:h-8 rounded-md w-[.35rem] md:w-[.3rem] bg-white"></span>
           <h2 className="text-xl md:text-2xl font-medium">Coming Soon</h2>
         </div>
-        <Link href="/anime/catalog?status=NOT_YET_RELEASED" className="flex items-center gap-1 text-sm text-[#1a365d] hover:underline">
+        <Link href="/anime/catalog?status=NOT_YET_RELEASED" className="flex items-center gap-1 text-sm text-[#ff9650] hover:underline">
           <span>View All</span>
           <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
         </Link>
@@ -61,12 +61,12 @@ function UpcomingAnimeSection({ animeList }) {
                   {/* Countdown overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent flex flex-col justify-end p-3">
                     {anime.nextAiringEpisode ? (
-                      <div className="bg-[#1a365d]/80 backdrop-blur-sm px-2 py-1 rounded text-white text-xs inline-flex items-center self-start">
+                      <div className="bg-[#ff9650]/80 backdrop-blur-sm px-2 py-1 rounded text-white text-xs inline-flex items-center self-start">
                         <FontAwesomeIcon icon={faClock} className="mr-1.5" />
                         {formatTimeUntil(timeUntilAiring)}
                       </div>
                     ) : (
-                      <div className="bg-[#1a365d]/80 backdrop-blur-sm px-2 py-1 rounded text-white text-xs inline-flex items-center self-start">
+                      <div className="bg-[#ff9650]/80 backdrop-blur-sm px-2 py-1 rounded text-white text-xs inline-flex items-center self-start">
                         <FontAwesomeIcon icon={faCalendarAlt} className="mr-1.5" />
                         {formatDate(anime.startDate)}
                       </div>
@@ -75,7 +75,7 @@ function UpcomingAnimeSection({ animeList }) {
                 </div>
                 
                 <div className="p-3 flex flex-col flex-grow">
-                  <h3 className="text-base font-medium text-white mb-1.5 line-clamp-2 group-hover:text-[#1a365d] transition-colors">
+                  <h3 className="text-base font-medium text-white mb-1.5 line-clamp-2 group-hover:text-[#ff9650] transition-colors">
                     {anime.title?.english || anime.title?.romaji}
                   </h3>
                   
@@ -86,7 +86,7 @@ function UpcomingAnimeSection({ animeList }) {
                       </span>
                     ))}
                     {anime.format && (
-                      <span className="px-2 py-0.5 bg-[#1a365d]/20 text-[#1a365d] rounded-full text-xs">
+                      <span className="px-2 py-0.5 bg-[#ff9650]/20 text-[#ff9650] rounded-full text-xs">
                         {anime.format.replace(/_/g, ' ')}
                       </span>
                     )}

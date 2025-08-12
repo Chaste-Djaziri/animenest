@@ -123,16 +123,16 @@ function NetflixStyleCatalog({ searchParams }) {
               </div>
               <button 
                 onClick={() => setShowFilters(!showFilters)}
-                className="flex items-center gap-2 px-4 py-2 bg-[#1a365d] hover:bg-[#14294d] text-white rounded-md transition-colors border border-[#1a365d]"
+                className="flex items-center gap-2 px-4 py-2 bg-[#ff9650] hover:bg-[#14294d] text-white rounded-md transition-colors border border-[#ff9650]"
               >
-                <FontAwesomeIcon icon={faFilter} className="text-[#1a365d]" />
+                <FontAwesomeIcon icon={faFilter} className="text-[#ff9650]" />
                 Filters
                 <FontAwesomeIcon icon={faChevronDown} className={`transition-transform ${showFilters ? 'rotate-180' : ''}`} />
               </button>
               {!isFormEmpty && (
                 <button 
                   onClick={resetValues}
-                  className="flex items-center gap-2 px-4 py-2 bg-[#1a365d] hover:bg-[#14294d] text-white rounded-md transition-colors border border-[#1a365d]"
+                  className="flex items-center gap-2 px-4 py-2 bg-[#ff9650] hover:bg-[#14294d] text-white rounded-md transition-colors border border-[#ff9650]"
                 >
                   <FontAwesomeIcon icon={faTrash} className="text-white" />
                   Clear Filters
@@ -342,7 +342,7 @@ function NetflixStyleCatalog({ searchParams }) {
 
       {/* Results Section - Netflix style */}
       <div className="px-4 sm:px-8 md:px-12 py-8 bg-black">
-        <h2 className="text-xl sm:text-2xl font-medium text-white mb-6 sm:mb-8 border-l-4 border-[#1a365d] pl-4">
+        <h2 className="text-xl sm:text-2xl font-medium text-white mb-6 sm:mb-8 border-l-4 border-[#ff9650] pl-4">
           {searchvalue ? `Search Results for "${searchvalue}"` : "Browse Anime"}
         </h2>
         <NetflixStyleSearchcard 

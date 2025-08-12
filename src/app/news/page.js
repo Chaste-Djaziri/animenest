@@ -7,14 +7,14 @@ import axios from 'axios';
 import { headers } from 'next/headers'
 
 export async function generateMetadata() {
-  let title = 'Anime News - SkyAnime';
+  let title = 'Anime News - ANINEST';
   let description = 'Get the latest anime news about your favorite series';
   
   return {
-    title: 'Anime News - SkyAnime',
+    title: 'Anime News - ANINEST',
     description: description,
     openGraph: {
-      title: 'Anime News - SkyAnime',
+      title: 'Anime News - ANINEST',
       description: description,
     },
   }

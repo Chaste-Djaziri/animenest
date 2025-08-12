@@ -27,12 +27,12 @@ function TopRatedSection({ animeList }) {
         <div className="flex items-center gap-2">
           <span className="h-6 md:h-8 rounded-md w-[.35rem] md:w-[.3rem] bg-white"></span>
           <h2 className="text-xl md:text-2xl font-medium">Top Rated Anime</h2>
-          <div className="flex items-center bg-[#1a365d] px-2 py-1 rounded-full ml-2 text-xs text-white">
+          <div className="flex items-center bg-[#ff9650] px-2 py-1 rounded-full ml-2 text-xs text-white">
             <FontAwesomeIcon icon={faTrophy} className="mr-1" />
             <span>Highest Scores</span>
           </div>
         </div>
-        <Link href="/anime/catalog?sort=SCORE_DESC" className="flex items-center gap-1 text-sm text-[#1a365d] hover:underline">
+        <Link href="/anime/catalog?sort=SCORE_DESC" className="flex items-center gap-1 text-sm text-[#ff9650] hover:underline">
           <span>View All</span>
           <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
         </Link>
@@ -53,7 +53,7 @@ function TopRatedSection({ animeList }) {
                 
                 {/* Score badge */}
                 <div className="absolute top-0 right-0">
-                  <div className={`${index < 3 ? 'bg-gradient-to-r from-amber-500 to-yellow-400' : 'bg-[#1a365d]'} py-2 px-3 rounded-bl-lg text-white font-bold flex items-center shadow-lg`}>
+                  <div className={`${index < 3 ? 'bg-gradient-to-r from-amber-500 to-yellow-400' : 'bg-[#ff9650]'} py-2 px-3 rounded-bl-lg text-white font-bold flex items-center shadow-lg`}>
                     <FontAwesomeIcon icon={index < 3 ? faAward : faStar} className={`${index < 3 ? 'text-white' : 'text-yellow-400'} mr-1.5`} />
                     {(anime.averageScore / 10).toFixed(1)}
                   </div>
@@ -61,7 +61,7 @@ function TopRatedSection({ animeList }) {
                 
                 {/* Ranking for top 3 */}
                 {index < 3 && (
-                  <div className="absolute top-2 left-2 w-8 h-8 rounded-full bg-[#1a365d] border-2 border-white flex items-center justify-center text-white font-bold shadow-lg">
+                  <div className="absolute top-2 left-2 w-8 h-8 rounded-full bg-[#ff9650] border-2 border-white flex items-center justify-center text-white font-bold shadow-lg">
                     {index + 1}
                   </div>
                 )}
@@ -75,7 +75,7 @@ function TopRatedSection({ animeList }) {
               </div>
               
               <div className="p-3 flex flex-col flex-grow">
-                <h3 className="text-sm font-medium text-white mb-1.5 line-clamp-2 group-hover:text-[#1a365d] transition-colors">
+                <h3 className="text-sm font-medium text-white mb-1.5 line-clamp-2 group-hover:text-[#ff9650] transition-colors">
                   {anime.title?.english || anime.title?.romaji}
                 </h3>
                 
@@ -86,7 +86,7 @@ function TopRatedSection({ animeList }) {
                     </span>
                   ))}
                   {anime.format && (
-                    <span className="px-2 py-0.5 bg-[#1a365d]/20 text-[#1a365d] rounded-full text-xs">
+                    <span className="px-2 py-0.5 bg-[#ff9650]/20 text-[#ff9650] rounded-full text-xs">
                       {anime.format.replace(/_/g, ' ')}
                     </span>
                   )}

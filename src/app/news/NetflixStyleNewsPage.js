@@ -88,7 +88,7 @@ function NetflixStyleNewsPage({ newsData: initialNewsData }) {
           {/* Title and metadata */}
           <div className="max-w-3xl">
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 flex items-center">
-              <FontAwesomeIcon icon={faNewspaper} className="mr-4 text-[#1a365d]" />
+              <FontAwesomeIcon icon={faNewspaper} className="mr-4 text-[#ff9650]" />
               {getCategoryTitle(activeCategory)}
             </h1>
 
@@ -101,7 +101,7 @@ function NetflixStyleNewsPage({ newsData: initialNewsData }) {
             <div className="flex flex-wrap items-center gap-3 text-sm text-[#ddd] mb-4">
               <button 
                 onClick={() => handleCategoryChange('LATEST')}
-                className={`flex items-center px-3 py-1.5 rounded transition-colors ${activeCategory === 'LATEST' ? 'bg-[#1a365d] text-white font-medium' : 'border border-[#555] hover:border-white'}`}
+                className={`flex items-center px-3 py-1.5 rounded transition-colors ${activeCategory === 'LATEST' ? 'bg-[#ff9650] text-white font-medium' : 'border border-[#555] hover:border-white'}`}
               >
                 <FontAwesomeIcon icon={faRss} className="mr-2" />
                 Latest Updates
@@ -109,7 +109,7 @@ function NetflixStyleNewsPage({ newsData: initialNewsData }) {
               
               <button 
                 onClick={() => handleCategoryChange('ANIME')}
-                className={`flex items-center px-3 py-1.5 rounded transition-colors ${activeCategory === 'ANIME' ? 'bg-[#1a365d] text-white font-medium' : 'border border-[#555] hover:border-white'}`}
+                className={`flex items-center px-3 py-1.5 rounded transition-colors ${activeCategory === 'ANIME' ? 'bg-[#ff9650] text-white font-medium' : 'border border-[#555] hover:border-white'}`}
               >
                 <FontAwesomeIcon icon={faFilm} className="mr-2" />
                 ANIME
@@ -117,7 +117,7 @@ function NetflixStyleNewsPage({ newsData: initialNewsData }) {
               
               <button 
                 onClick={() => handleCategoryChange('MANGA')}
-                className={`flex items-center px-3 py-1.5 rounded transition-colors ${activeCategory === 'MANGA' ? 'bg-[#1a365d] text-white font-medium' : 'border border-[#555] hover:border-white'}`}
+                className={`flex items-center px-3 py-1.5 rounded transition-colors ${activeCategory === 'MANGA' ? 'bg-[#ff9650] text-white font-medium' : 'border border-[#555] hover:border-white'}`}
               >
                 <FontAwesomeIcon icon={faBook} className="mr-2" />
                 MANGA
@@ -125,7 +125,7 @@ function NetflixStyleNewsPage({ newsData: initialNewsData }) {
               
               <button 
                 onClick={() => handleCategoryChange('INDUSTRY')}
-                className={`flex items-center px-3 py-1.5 rounded transition-colors ${activeCategory === 'INDUSTRY' ? 'bg-[#1a365d] text-white font-medium' : 'border border-[#555] hover:border-white'}`}
+                className={`flex items-center px-3 py-1.5 rounded transition-colors ${activeCategory === 'INDUSTRY' ? 'bg-[#ff9650] text-white font-medium' : 'border border-[#555] hover:border-white'}`}
               >
                 <FontAwesomeIcon icon={faIndustry} className="mr-2" />
                 INDUSTRY
@@ -137,16 +137,16 @@ function NetflixStyleNewsPage({ newsData: initialNewsData }) {
 
       {/* News Content Section - Netflix style */}
       <div className="px-4 sm:px-8 md:px-12 py-8 bg-black">
-        <h2 className="text-xl sm:text-2xl font-medium text-white mb-6 sm:mb-8 border-l-4 border-[#1a365d] pl-4 flex items-center">
-          <FontAwesomeIcon icon={getCategoryIcon(activeCategory)} className="mr-3 text-[#1a365d]" />
+        <h2 className="text-xl sm:text-2xl font-medium text-white mb-6 sm:mb-8 border-l-4 border-[#ff9650] pl-4 flex items-center">
+          <FontAwesomeIcon icon={getCategoryIcon(activeCategory)} className="mr-3 text-[#ff9650]" />
           {getCategoryTitle(activeCategory)}
-          {loading && <FontAwesomeIcon icon={faSpinner} className="ml-3 animate-spin text-[#1a365d]" />}
+          {loading && <FontAwesomeIcon icon={faSpinner} className="ml-3 animate-spin text-[#ff9650]" />}
         </h2>
         
         {loading ? (
           <div className="flex justify-center items-center h-64 bg-[#0a0a0a] rounded-lg border border-[#222]">
             <div className="flex flex-col items-center">
-              <div className="w-12 h-12 rounded-full border-4 border-t-[#1a365d] border-r-[#1a365d] border-b-transparent border-l-transparent animate-spin mb-4"></div>
+              <div className="w-12 h-12 rounded-full border-4 border-t-[#ff9650] border-r-[#ff9650] border-b-transparent border-l-transparent animate-spin mb-4"></div>
               <p className="text-white text-lg">Loading {activeCategory.toLowerCase()} news...</p>
             </div>
           </div>
@@ -155,7 +155,7 @@ function NetflixStyleNewsPage({ newsData: initialNewsData }) {
         ) : (
           <div className="flex justify-center items-center h-64 bg-[#0a0a0a] rounded-lg border border-[#222]">
             <div className="flex flex-col items-center">
-              <FontAwesomeIcon icon={faNewspaper} className="text-[#1a365d] text-4xl mb-4" />
+              <FontAwesomeIcon icon={faNewspaper} className="text-[#ff9650] text-4xl mb-4" />
               <p className="text-white text-lg">No news available</p>
             </div>
           </div>

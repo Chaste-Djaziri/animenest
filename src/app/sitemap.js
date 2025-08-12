@@ -6,28 +6,28 @@ export default async function sitemap() {
 
   const trending = data.map((anime)=>{
     return {
-      url: `https://skyanime.site/anime/info/${anime.id}`,
+      url: `https://ANINEST.site/anime/info/${anime.id}`,
       lastModified: new Date(),
     }
   })
 
   const top100 = data2.map((anime)=>{
     return {
-      url: `https://skyanime.site/anime/info/${anime.id}`,
+      url: `https://ANINEST.site/anime/info/${anime.id}`,
       lastModified: new Date(),
     }
   })
 
   const seasonal = data3.map((anime)=>{
     return {
-      url: `https://skyanime.site/anime/info/${anime.id}`,
+      url: `https://ANINEST.site/anime/info/${anime.id}`,
       lastModified: new Date(),
     }
   })
 
     return [
       {
-        url: 'https://skyanime.site',
+        url: 'https://ANINEST.site',
         lastModified: new Date(),
         changeFrequency: 'yearly',
         priority: 1,

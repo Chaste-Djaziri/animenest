@@ -40,7 +40,7 @@ function NetflixStyleNewsGrid({ newsItems }) {
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="flex items-center justify-center">
-                    <div className="w-10 h-10 rounded-full bg-[#1a365d]/90 backdrop-blur-sm flex items-center justify-center border border-[#1a365d] text-white">
+                    <div className="w-10 h-10 rounded-full bg-[#ff9650]/90 backdrop-blur-sm flex items-center justify-center border border-[#ff9650] text-white">
                       <FontAwesomeIcon icon={faInfoCircle} />
                     </div>
                   </div>
@@ -60,7 +60,7 @@ function NetflixStyleNewsGrid({ newsItems }) {
             </div>
             
             <div className="p-4 flex flex-col flex-grow">
-              <h3 className="text-lg font-semibold text-white mb-2 line-clamp-2 group-hover:text-[#1a365d] transition-colors">
+              <h3 className="text-lg font-semibold text-white mb-2 line-clamp-2 group-hover:text-[#ff9650] transition-colors">
                 {item.title?.english || item.title?.romaji}
               </h3>
               

@@ -9,7 +9,7 @@ const releaseLogs = [
     {
         version: "V2.1.0",
         changes: [
-            "SkyAnime with a refreshed user interface",
+            "ANINEST with a refreshed user interface",
             "Improved episode listing with new display modes",
             "Better support for anime with large episode counts (20,000+)",
             "Enhanced mobile experience",
@@ -60,7 +60,7 @@ export default function Changelogs() {
                             <ModalBody>
                                 <div className="flex flex-col">
                                     <div className="flex justify-between items-center gap-2">
-                                        <p className="text-lg sm:text-xl">SkyAnime Updates</p>
+                                        <p className="text-lg sm:text-xl">ANINEST Updates</p>
                                         <div className="flex gap-3 items-center">
                                             {/* Instagram Icon */}
                                             <Link
@@ -99,7 +99,7 @@ export default function Changelogs() {
                                         <p className="text-sm text-gray-400">
                                             You've just entered the realm of updates, where every change brings us closer to anime perfection! 🌠
 
-🛠️ From bug vanishing jutsus to UI power-ups, this is your gateway to all the newest upgrades, features, and improvements powering your SkyAnime experience! 💫
+🛠️ From bug vanishing jutsus to UI power-ups, this is your gateway to all the newest upgrades, features, and improvements powering your ANINEST experience! 💫
 
 Stay tuned, and may your watchlist always be full! 🍿🎥
                                         </p>
@@ -120,7 +120,7 @@ Stay tuned, and may your watchlist always be full! 🍿🎥
                                 </div>
                             </ModalBody>
                             <ModalFooter>
-                                <Button className="bg-[#1a365d] rounded-lg" onPress={onClose}>
+                                <Button className="bg-[#ff9650] rounded-lg" onPress={onClose}>
                                 Dismiss
                                 </Button>
                             </ModalFooter>

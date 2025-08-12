@@ -30,12 +30,12 @@ function CurrentlyAiringSection({ animeList }) {
         <div className="flex items-center gap-2">
           <span className="h-6 md:h-8 rounded-md w-[.35rem] md:w-[.3rem] bg-white"></span>
           <h2 className="text-xl md:text-2xl font-medium">On Air Now</h2>
-          <div className="flex items-center bg-[#1a365d] px-2 py-1 rounded-full ml-2 text-xs text-white">
+          <div className="flex items-center bg-[#ff9650] px-2 py-1 rounded-full ml-2 text-xs text-white">
             <FontAwesomeIcon icon={faTv} className="mr-1" />
             <span>Weekly Updates</span>
           </div>
         </div>
-        <Link href="/anime/catalog?status=RELEASING" className="flex items-center gap-1 text-sm text-[#1a365d] hover:underline">
+        <Link href="/anime/catalog?status=RELEASING" className="flex items-center gap-1 text-sm text-[#ff9650] hover:underline">
           <span>View All</span>
           <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
         </Link>
@@ -70,7 +70,7 @@ function CurrentlyAiringSection({ animeList }) {
                 <div className="flex-1 flex flex-col justify-center">
                   <div className="flex items-center gap-2 mb-1.5">
                     {anime.averageScore && (
-                      <div className="bg-[#1a365d]/80 px-2 py-0.5 rounded text-white text-xs inline-flex items-center">
+                      <div className="bg-[#ff9650]/80 px-2 py-0.5 rounded text-white text-xs inline-flex items-center">
                         <FontAwesomeIcon icon={faStar} className="text-yellow-500 mr-1" />
                         {anime.averageScore / 10}
                       </div>
@@ -78,7 +78,7 @@ function CurrentlyAiringSection({ animeList }) {
                     <span className="text-xs text-gray-400">{anime.format?.replace(/_/g, ' ') || 'TV'}</span>
                   </div>
                   
-                  <h3 className="text-base md:text-lg font-medium text-white mb-1.5 line-clamp-2 group-hover:text-[#1a365d] transition-colors">
+                  <h3 className="text-base md:text-lg font-medium text-white mb-1.5 line-clamp-2 group-hover:text-[#ff9650] transition-colors">
                     {anime.title?.english || anime.title?.romaji}
                   </h3>
                   
@@ -95,12 +95,12 @@ function CurrentlyAiringSection({ animeList }) {
                       <div className="mr-2">
                         <div className="text-xs text-gray-400">Next episode</div>
                         <div className="text-sm font-medium text-white flex items-center">
-                          <FontAwesomeIcon icon={faCalendarWeek} className="text-[#1a365d] mr-1.5" />
+                          <FontAwesomeIcon icon={faCalendarWeek} className="text-[#ff9650] mr-1.5" />
                           EP {anime.nextAiringEpisode.episode} in {formatTimeUntil(anime.nextAiringEpisode.timeUntilAiring)}
                         </div>
                       </div>
                       <div className="ml-auto">
-                        <div className="w-8 h-8 rounded-full bg-[#1a365d]/90 flex items-center justify-center text-white group-hover:bg-[#1a365d] transition-colors">
+                        <div className="w-8 h-8 rounded-full bg-[#ff9650]/90 flex items-center justify-center text-white group-hover:bg-[#ff9650] transition-colors">
                           <FontAwesomeIcon icon={faPlay} size="sm" />
                         </div>
                       </div>

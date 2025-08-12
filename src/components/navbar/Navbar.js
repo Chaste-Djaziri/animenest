@@ -112,7 +112,7 @@ function Navbarcomponent({ home = false }) {
             <div className={styles.navleft}>
                 <div className={styles.logoContainer}>
                     <Link href="/" className={styles.logoLink}>
-                        <span className={styles.logoText}>SKY<span className={styles.logoHighlight}>ANIME</span></span>
+                        <span className={styles.logoText}>ANI<span className={styles.logoHighlight}>NEST</span></span>
                     </Link>
                 </div>
                 {/* Desktop Navigation */}
@@ -154,7 +154,7 @@ function Navbarcomponent({ home = false }) {
                             <DropdownTrigger>
                                 <div className={styles.notificationButton}>
                                     <Badge 
-                                        style={{ backgroundColor: "#1a365d" }} 
+                                        style={{ backgroundColor: "#ff9650" }} 
                                         content={todayNotifications?.length} 
                                         shape="circle" 
                                         showOutline={false} 
@@ -207,7 +207,7 @@ function Navbarcomponent({ home = false }) {
                                                     description={`${contexts?.[0]} ${episode} ${contexts?.[1]} ${media?.title?.[animetitle] || media?.title?.romaji} ${contexts?.[contexts?.length - 1]}`}
                                                     className='py-2 w-full'
                                                     classNames={{
-                                                        description: 'text-[11px] text-[#A1A1AA]',
+                                                        description: 'text-[11px] text-[#FF9650]',
                                                     }}
                                                 >
                                                     <div className='flex flex-row items-center justify-between w-[290px]'>
@@ -215,7 +215,7 @@ function Navbarcomponent({ home = false }) {
                                                             {((media?.title?.[animetitle] || media?.title?.romaji) || '').slice(0, 24)}
                                                             {((media?.title?.[animetitle] || media?.title?.romaji) || '').length > 24 && '...'}
                                                         </p>
-                                                        <span className='text-[#f1f1f1b2] text-[10px]'>{NotificationTime(createdAt)}</span>
+                                                        <span className='text-[#FF9650] text-[10px]'>{NotificationTime(createdAt)}</span>
                                                     </div>
                                                 </DropdownItem>
                                             );
@@ -238,7 +238,7 @@ function Navbarcomponent({ home = false }) {
                                                     description={`${contexts?.[0]} ${episode} ${contexts?.[1]} ${media?.title?.[animetitle] || media?.title?.romaji} ${contexts?.[contexts?.length - 1]}`}
                                                     className='py-2 w-full'
                                                     classNames={{
-                                                        description: 'text-[11px] text-[#A1A1AA]',
+                                                        description: 'text-[11px] text-[#FF9650]',
                                                     }}
                                                 >
                                                     <div className='flex flex-row items-center justify-between w-[290px]'>
@@ -246,7 +246,7 @@ function Navbarcomponent({ home = false }) {
                                                             {((media?.title?.[animetitle] || media?.title?.romaji) || '').slice(0, 24)}
                                                             {((media?.title?.[animetitle] || media?.title?.romaji) || '').length > 24 && '...'}
                                                         </p>
-                                                        <span className='text-[#f1f1f1b2] text-[10px]'>{NotificationTime(createdAt)}</span>
+                                                        <span className='text-[#FF9650] text-[10px]'>{NotificationTime(createdAt)}</span>
                                                     </div>
                                                 </DropdownItem>
                                             );
@@ -265,7 +265,7 @@ function Navbarcomponent({ home = false }) {
                                             key={"delete"}
                                             showFullDescription
                                             className='py-2 w-full text-xl text-default-500 flex-shrink-0'
-                                            style={{ color: "#1a365d" }}
+                                            style={{ color: "#ff9650" }}
                                         >
                                             <Link href={`/user/notifications`} className='w-full h-full block '>Show all</Link>
                                         </DropdownItem>
@@ -275,7 +275,7 @@ function Navbarcomponent({ home = false }) {
                                             key={"delete"}
                                             showFullDescription
                                             className='py-2 w-full text-xl text-default-500 flex-shrink-0'
-                                            style={{ color: "#1a365d" }}
+                                            style={{ color: "#ff9650" }}
                                         >
                                             <Link href={`/user/notifications`} className='w-full h-full block '>Show all</Link>
                                         </DropdownItem>
@@ -297,8 +297,8 @@ function Navbarcomponent({ home = false }) {
                                 isDisabled={status === 'loading'}
                                 as="button"
                                 className="transition-transform w-[32px] h-[32px] backdrop-blur-sm"
-                                color="primary"
-                                style={{ borderColor: "#1a365d" }}
+                                color="warning"
+                                style={{ borderColor: "#ff9650" }}
                                 name={data?.user?.name}
                                 size="sm"
                                 src={data?.user?.image?.large || data?.user?.image?.medium || "/profile.png"}
@@ -319,7 +319,7 @@ function Navbarcomponent({ home = false }) {
                             <DropdownItem key="settings" startContent={<SettingsIcon className={iconClasses} />}>
                                 <Link href={`/settings`} className='w-full h-full block '>Settings</Link>
                             </DropdownItem>
-                            <DropdownItem key="logout" style={{ color: "#1a365d" }} startContent={<LogoutIcon className={iconClasses} />}>
+                            <DropdownItem key="logout" style={{ color: "#ff9650" }} startContent={<LogoutIcon className={iconClasses} />}>
                                 <button className="font-semibold outline-none border-none w-full h-full block text-left" onClick={() => signOut('AniListProvider')}>Log Out</button>
                             </DropdownItem>
                         </DropdownMenu>

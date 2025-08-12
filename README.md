@@ -1,16 +1,16 @@
 <div align="center">
-  <a href="https://skyanime.com" target="_blank">
-    <img src="https://github.com/EternalAnime/skyanime-best-verse-/blob/main/public/android-chrome-512x512.png" alt="Logo" width="140" height="140">
+  <a href="https://ANINEST.com" target="_blank">
+    <img src="https://github.com/EternalAnime/ANINEST-best-verse-/blob/main/public/android-chrome-512x512.png" alt="Logo" width="140" height="140">
   </a>
-🌌 SkyAnime
+🌌 ANINEST
 The Future of Anime Streaming — Open Source & Ad-Free
 
-<p> Built with <strong>Next.js 14</strong>, integrated with <strong>AniList</strong>, and powered by <strong>Consumet API</strong> & <strong>Anify</strong> — SkyAnime delivers a seamless, beautiful, and blazing-fast anime experience. </p>
-🌍 Visit SkyAnime • 💬 Join Discord • 📸 Instagram
+<p> Built with <strong>Next.js 14</strong>, integrated with <strong>AniList</strong>, and powered by <strong>Consumet API</strong> & <strong>Anify</strong> — ANINEST delivers a seamless, beautiful, and blazing-fast anime experience. </p>
+🌍 Visit ANINEST • 💬 Join Discord • 📸 Instagram
 
 </div>
-🧩 What is SkyAnime?
-SkyAnime is a powerful and modern anime streaming platform with an intuitive UI, fast performance, and zero ads. Whether you're on mobile, desktop, or using it as a PWA — it just works. With full AniList support, your anime journey is always tracked, organized, and personalized.
+🧩 What is ANINEST?
+ANINEST is a powerful and modern anime streaming platform with an intuitive UI, fast performance, and zero ads. Whether you're on mobile, desktop, or using it as a PWA — it just works. With full AniList support, your anime journey is always tracked, organized, and personalized.
 
 ⚙️ Built With
 Next.js 14 – blazing-fast SSR & App Router
@@ -116,19 +116,19 @@ Or just give us a ⭐ and share with friends — that helps too!
 📬 Contact
 Instagram: @the._.voidborn
 
-Discord Server: Join SkyAnime discord.gg/soupfr
+Discord Server: Join ANINEST discord.gg/soupfr
 
-Official Site: https://skyanime.com
+Official Site: https://ANINEST.com
 
 📢 Disclaimer
 ⚠️ This project is made strictly for educational and personal learning purposes.
-SkyAnime does not host or distribute any copyrighted content.
+ANINEST does not host or distribute any copyrighted content.
 Commercial use, monetization, or redistribution of this project is strictly prohibited.
 All rights to anime content belong to their respective owners and licensors.
 
 <div align="center">
 🌀 Made with love by anime fans for anime fans.
 🚀 Powered by open-source.
-🌌 Experience the best of anime — with SkyAnime.
+🌌 Experience the best of anime — with ANINEST.
 
 </div>

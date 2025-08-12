@@ -30,12 +30,12 @@ function RecentlyUpdatedSection({ animeList }) {
         <div className="flex items-center gap-2">
           <span className="h-6 md:h-8 rounded-md w-[.35rem] md:w-[.3rem] bg-white"></span>
           <h2 className="text-xl md:text-2xl font-medium">Recently Updated</h2>
-          <div className="flex items-center bg-[#1a365d] px-2 py-1 rounded-full ml-2 text-xs text-white">
+          <div className="flex items-center bg-[#ff9650] px-2 py-1 rounded-full ml-2 text-xs text-white">
             <FontAwesomeIcon icon={faSync} className="mr-1" />
             <span>Latest Changes</span>
           </div>
         </div>
-        <Link href="/anime/catalog?sort=UPDATED_AT_DESC" className="flex items-center gap-1 text-sm text-[#1a365d] hover:underline">
+        <Link href="/anime/catalog?sort=UPDATED_AT_DESC" className="flex items-center gap-1 text-sm text-[#ff9650] hover:underline">
           <span>View All</span>
           <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
         </Link>
@@ -59,7 +59,7 @@ function RecentlyUpdatedSection({ animeList }) {
                 <div>
                   <div className="flex items-center gap-2 mb-1">
                     {anime.updatedAt && (
-                      <div className="bg-[#1a365d]/20 px-2 py-0.5 rounded text-[#1a365d] text-xs inline-flex items-center">
+                      <div className="bg-[#ff9650]/20 px-2 py-0.5 rounded text-[#ff9650] text-xs inline-flex items-center">
                         <FontAwesomeIcon icon={faClock} className="mr-1" />
                         {formatTimeSinceUpdate(anime.updatedAt)}
                       </div>
@@ -71,7 +71,7 @@ function RecentlyUpdatedSection({ animeList }) {
                     )}
                   </div>
                   
-                  <h3 className="text-sm font-medium text-white line-clamp-2 group-hover:text-[#1a365d] transition-colors">
+                  <h3 className="text-sm font-medium text-white line-clamp-2 group-hover:text-[#ff9650] transition-colors">
                     {anime.title?.english || anime.title?.romaji}
                   </h3>
                 </div>
@@ -89,7 +89,7 @@ function RecentlyUpdatedSection({ animeList }) {
                     ) : null}
                   </div>
                   
-                  <div className="w-8 h-8 rounded-full bg-[#1a365d]/20 flex items-center justify-center text-[#1a365d] group-hover:bg-[#1a365d] group-hover:text-white transition-colors">
+                  <div className="w-8 h-8 rounded-full bg-[#ff9650]/20 flex items-center justify-center text-[#ff9650] group-hover:bg-[#ff9650] group-hover:text-white transition-colors">
                     <FontAwesomeIcon icon={faBell} size="sm" />
                   </div>
                 </div>

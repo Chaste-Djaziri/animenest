@@ -93,7 +93,7 @@ function Notifications({ session }) {
                                             {` ${item?.contexts?.[item?.contexts?.length - 1]}`}
                                         </div>
                                     )}
-                                    <span className='text-[#f1f1f1b2] text-[10px]'>{NotificationTime(item?.createdAt)}</span>
+                                    <span className='text-[#FF9650] text-[10px]'>{NotificationTime(item?.createdAt)}</span>
                                 </div>
                             </div>
                         ))

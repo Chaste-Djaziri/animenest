@@ -28,7 +28,7 @@ function PopularMangaSection({ mangaList }) {
           <span className="h-6 md:h-8 rounded-md w-[.35rem] md:w-[.3rem] bg-white"></span>
           <h2 className="text-xl md:text-2xl font-medium">Popular Manga</h2>
         </div>
-        <Link href="/anime/catalog?type=MANGA" className="flex items-center gap-1 text-sm text-[#1a365d] hover:underline">
+        <Link href="/anime/catalog?type=MANGA" className="flex items-center gap-1 text-sm text-[#ff9650] hover:underline">
           <span>View All</span>
           <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
         </Link>
@@ -47,7 +47,7 @@ function PopularMangaSection({ mangaList }) {
                 
                 {/* Status badge */}
                 <div className="absolute top-2 left-2">
-                  <div className="bg-[#1a365d]/80 backdrop-blur-sm px-2 py-1 rounded text-white text-xs inline-flex items-center">
+                  <div className="bg-[#ff9650]/80 backdrop-blur-sm px-2 py-1 rounded text-white text-xs inline-flex items-center">
                     <FontAwesomeIcon icon={faBook} className="mr-1.5" />
                     {manga.status?.replace(/_/g, ' ') || 'Unknown'}
                   </div>
@@ -72,13 +72,13 @@ function PopularMangaSection({ mangaList }) {
               </div>
               
               <div className="p-3 flex flex-col">
-                <h3 className="text-sm font-medium text-white line-clamp-2 group-hover:text-[#1a365d] transition-colors">
+                <h3 className="text-sm font-medium text-white line-clamp-2 group-hover:text-[#ff9650] transition-colors">
                   {manga.title?.english || manga.title?.romaji}
                 </h3>
                 
                 <div className="flex items-center justify-between mt-2 text-xs text-gray-400">
                   <span className="flex items-center gap-1">
-                    <FontAwesomeIcon icon={faBookOpen} className="text-[#1a365d]" />
+                    <FontAwesomeIcon icon={faBookOpen} className="text-[#ff9650]" />
                     {manga.chapters || '?'} Ch
                   </span>
                   <span className="flex items-center gap-1">{manga.format?.replace(/_/g, ' ') || 'Unknown'}</span>

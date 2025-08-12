@@ -124,7 +124,7 @@ function AnimeDetailsTop({ data, list, session, setList, url }) {
                       <ModalBody className=''>
                         <div className="text-center flex flex-col justify-center items-center">
                           <p className="text-lg mb-3">Login to edit your list.</p>
-                          <button className="font-semibold outline-none border-none py-2 px-4 bg-[#1a365d] rounded-md flex items-center" onClick={() => signIn('AniListProvider')}>
+                          <button className="font-semibold outline-none border-none py-2 px-4 bg-[#ff9650] rounded-md flex items-center" onClick={() => signIn('AniListProvider')}>
                             <Image alt="anilist-icon" loading="lazy" width="25" height="25" src="/anilist.svg" className='mr-2' />
                             Login With Anilist</button>
                         </div>

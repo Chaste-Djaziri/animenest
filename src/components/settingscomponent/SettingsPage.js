@@ -55,7 +55,7 @@ function SettingsPage() {
                 <div className='absolute w-full h-full' style={{ backgroundImage: `url('https://i.pinimg.com/736x/e5/33/d1/e533d1eaaf1480fd821bd1f53e75c936.jpg')`, backgroundPosition: "center", backgroundSize: "cover", height: "100%", opacity: 0.7 }}></div>
                 <div className='bg-gradient-to-t from-black from-10% to-black/50 absolute h-[101%] w-full z-[4] bottom-[-1px] inset-0'></div>
                 <div className='absolute left-[2%] lg:left-[7%] xl:left-[9.5%] bottom-6 lg:bottom-10 z-[6] text-[35px] font-bold flex flex-row items-center'>
-                    <div className="bg-[#1a365d] p-2 rounded-lg shadow-lg mr-3">
+                    <div className="bg-[#ff9650] p-2 rounded-lg shadow-lg mr-3">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 hover:animate-spin text-white">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
@@ -72,7 +72,7 @@ function SettingsPage() {
                       <div className='flex items-center w-[100%] justify-between bg-[#111] p-5 rounded-lg border border-[#333] hover:border-[#444] transition-colors duration-200'>
                             <div className='mr-4 w-full'>
                                 <p className='text-[18px] md:text-[21px] font-medium text-white flex items-center gap-2'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#1a365d]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#ff9650]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
@@ -88,7 +88,7 @@ function SettingsPage() {
                         <div className='flex items-center w-[100%] justify-between bg-[#111] p-5 rounded-lg border border-[#333] hover:border-[#444] transition-colors duration-200'>
                             <div className='mr-4 w-full'>
                                 <p className='text-[18px] md:text-[21px] font-medium text-white flex items-center gap-2'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#1a365d]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#ff9650]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
@@ -104,7 +104,7 @@ function SettingsPage() {
                         <div className='flex items-center w-[100%] justify-between bg-[#111] p-5 rounded-lg border border-[#333] hover:border-[#444] transition-colors duration-200'>
                             <div className='mr-4 w-full'>
                                 <p className='text-[18px] md:text-[21px] font-medium text-white flex items-center gap-2'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#1a365d]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#ff9650]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
@@ -130,7 +130,7 @@ function SettingsPage() {
                         <div className='flex items-center w-[100%] justify-between bg-[#111] p-5 rounded-lg border border-[#333] hover:border-[#444] transition-colors duration-200'>
                             <div className='mr-4 w-full'>
                                 <p className='text-[18px] md:text-[21px] font-medium text-white flex items-center gap-2'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#1a365d]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#ff9650]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" clipRule="evenodd" />
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
                                     </svg>
@@ -146,7 +146,7 @@ function SettingsPage() {
                         
                         <div className='flex flex-col w-[100%] bg-[#111] p-5 rounded-lg border border-[#333] hover:border-[#444] transition-colors duration-200'>
                             <p className='text-[18px] md:text-[21px] font-medium text-white flex items-center gap-2 mb-4'>
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#1a365d]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#ff9650]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
@@ -155,7 +155,7 @@ function SettingsPage() {
                             <div className='flex items-center w-[100%] justify-between mb-5 bg-black/30 p-3 rounded-md'>
                                 <div className='mr-4 w-[100%]'>
                                     <p className='text-[15px] md:text-[18px] font-medium text-white flex items-center gap-2'>
-                                        <span className="bg-[#1a365d] text-white text-xs font-bold px-2 py-1 rounded-full">1</span>
+                                        <span className="bg-[#ff9650] text-white text-xs font-bold px-2 py-1 rounded-full">1</span>
                                         Vidstack Player
                                     </p>
                                     <p className='text-[11px] md:text-[13px] text-[#bfc6d0] lg:max-w-[55%] line-clamp-3 mt-1'>
@@ -170,7 +170,7 @@ function SettingsPage() {
                             <div className='flex items-center w-[100%] justify-between bg-black/30 p-3 rounded-md'>
                                 <div className='mr-4 w-[100%]'>
                                     <p className='text-[15px] md:text-[18px] font-medium text-white flex items-center gap-2'>
-                                        <span className="bg-[#1a365d] text-white text-xs font-bold px-2 py-1 rounded-full">2</span>
+                                        <span className="bg-[#ff9650] text-white text-xs font-bold px-2 py-1 rounded-full">2</span>
                                         ArtPlayer
                                     </p>
                                     <p className='text-[11px] md:text-[13px] text-[#bfc6d0] lg:max-w-[55%] line-clamp-3 mt-1'>
@@ -186,7 +186,7 @@ function SettingsPage() {
                         
                         <div className='flex flex-col w-[100%] bg-[#111] p-5 rounded-lg border border-[#333] hover:border-[#444] transition-colors duration-200'>
                             <p className='text-[18px] md:text-[21px] font-medium text-white flex items-center gap-2 mb-4'>
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#1a365d]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#ff9650]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                                 Video Loading Options
@@ -194,7 +194,7 @@ function SettingsPage() {
                             <div className='flex items-center w-[100%] justify-between mb-5 bg-black/30 p-3 rounded-md'>
                                 <div className='mr-4 w-[100%]'>
                                     <p className='text-[15px] md:text-[18px] font-medium text-white flex items-center gap-2'>
-                                        <span className="bg-[#1a365d] text-white text-xs font-bold px-2 py-1 rounded-full">1</span>
+                                        <span className="bg-[#ff9650] text-white text-xs font-bold px-2 py-1 rounded-full">1</span>
                                         Idle
                                     </p>
                                     <p className='text-[11px] md:text-[13px] text-[#bfc6d0] lg:max-w-[55%] line-clamp-3 mt-1'>
@@ -209,7 +209,7 @@ function SettingsPage() {
                             <div className='flex items-center w-[100%] justify-between mb-5 bg-black/30 p-3 rounded-md'>
                                 <div className='mr-4 w-[100%]'>
                                     <p className='text-[15px] md:text-[18px] font-medium text-white flex items-center gap-2'>
-                                        <span className="bg-[#1a365d] text-white text-xs font-bold px-2 py-1 rounded-full">2</span>
+                                        <span className="bg-[#ff9650] text-white text-xs font-bold px-2 py-1 rounded-full">2</span>
                                         Visible
                                     </p>
                                     <p className='text-[11px] md:text-[13px] text-[#bfc6d0] lg:max-w-[55%] line-clamp-3 mt-1'>
@@ -224,7 +224,7 @@ function SettingsPage() {
                             <div className='flex items-center w-[100%] justify-between bg-black/30 p-3 rounded-md'>
                                 <div className='mr-4 w-[100%]'>
                                     <p className='text-[15px] md:text-[18px] font-medium text-white flex items-center gap-2'>
-                                        <span className="bg-[#1a365d] text-white text-xs font-bold px-2 py-1 rounded-full">3</span>
+                                        <span className="bg-[#ff9650] text-white text-xs font-bold px-2 py-1 rounded-full">3</span>
                                         Eager
                                     </p>
                                     <p className='text-[11px] md:text-[13px] text-[#bfc6d0] lg:max-w-[55%] line-clamp-3 mt-1'>

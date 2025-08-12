@@ -9,7 +9,7 @@ export async function generateMetadata({ params }) {
   const data = await fetchNewsArticle(id);
 
   return {
-    title: data?.title?.english || data?.title?.romaji || 'News Article - SkyAnime',
+    title: data?.title?.english || data?.title?.romaji || 'News Article - ANINEST',
     description: data?.description?.slice(0, 180) || 'Anime news article',
     openGraph: {
       title: data?.title?.english || data?.title?.romaji,
@@ -38,7 +38,7 @@ async function NewsArticlePage({ params }) {
         ) : (
           <div className="flex justify-center items-center h-64 bg-[#0a0a0a] rounded-lg border border-[#222] mx-4 sm:mx-8 md:mx-12">
             <div className="flex flex-col items-center">
-              <div className="w-12 h-12 rounded-full border-4 border-t-[#1a365d] border-r-[#1a365d] border-b-transparent border-l-transparent animate-spin mb-4"></div>
+              <div className="w-12 h-12 rounded-full border-4 border-t-[#ff9650] border-r-[#ff9650] border-b-transparent border-l-transparent animate-spin mb-4"></div>
               <p className="text-white text-lg">Article not found</p>
             </div>
           </div>

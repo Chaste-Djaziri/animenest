@@ -9,7 +9,7 @@ function MobileNavButton() {
     <Dropdown>
       <DropdownTrigger>
         <button 
-          className="z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased fixed bottom-5 left-4 w-[50px] h-[50px] text-white rounded-full flex items-center justify-center box-border outline-none bg-[#1a365d] shadow-[0_4px_20px_rgba(26,54,93,0.5)] hover:bg-[#14294d] transition-all duration-300 md:hidden"
+          className="z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased fixed bottom-5 left-4 w-[50px] h-[50px] text-white rounded-full flex items-center justify-center box-border outline-none bg-[#ff9650] shadow-[0_4px_20px_rgba(26,54,93,0.5)] hover:bg-[#14294d] transition-all duration-300 md:hidden"
           type="button"
         >
           <svg 
@@ -34,9 +34,9 @@ function MobileNavButton() {
       </DropdownTrigger>
       <DropdownMenu 
         aria-label="Navigation Options"
-        className="bg-black/95 backdrop-blur-md border border-[#1a365d]/30 rounded-lg shadow-[0_8px_32px_rgba(0,0,0,0.8)] text-white p-1"
+        className="bg-black/95 backdrop-blur-md border border-[#ff9650]/30 rounded-lg shadow-[0_8px_32px_rgba(0,0,0,0.8)] text-white p-1"
         itemClasses={{
-          base: "rounded-md data-[hover=true]:bg-[#1a365d]/20 data-[hover=true]:text-white"
+          base: "rounded-md data-[hover=true]:bg-[#ff9650]/20 data-[hover=true]:text-white"
         }}
       >
         <DropdownItem key="browse" textValue="Browse">

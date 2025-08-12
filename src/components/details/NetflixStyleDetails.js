@@ -270,7 +270,7 @@ function NetflixStyleDetails({ data, id, session, list, setList, url }) {
             
             {/* Netflix-style metadata row */}
             <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm text-[#ddd] mb-2 sm:mb-4">
-              <span className="text-[#1a365d] font-medium">{info.tvInfo.showType}</span>
+              <span className="text-[#ff9650] font-medium">{info.tvInfo.showType}</span>
               {info.tvInfo.year && <span>{info.tvInfo.year}</span>}
               {info.tvInfo.quality && <span className="border border-[#555] px-1">{info.tvInfo.quality}</span>}
               <span className="px-2 py-0.5 bg-[#333] rounded text-xs">{info.tvInfo.rating}</span>
@@ -372,7 +372,7 @@ function NetflixStyleDetails({ data, id, session, list, setList, url }) {
                         </button>
                       </div>
                       {linkCopied && (
-                        <p className="text-xs text-[#1a365d] mt-2">Link copied!</p>
+                        <p className="text-xs text-[#ff9650] mt-2">Link copied!</p>
                       )}
                     </div>
                   </div>
@@ -384,7 +384,7 @@ function NetflixStyleDetails({ data, id, session, list, setList, url }) {
         
         {/* Netflix-style maturity rating */}
         {data?.isAdult && (
-          <div className="absolute top-4 sm:top-8 md:top-12 right-4 sm:right-8 md:right-12 z-20 bg-[#333] text-white px-2 py-1 border-l-4 border-[#1a365d]">
+          <div className="absolute top-4 sm:top-8 md:top-12 right-4 sm:right-8 md:right-12 z-20 bg-[#333] text-white px-2 py-1 border-l-4 border-[#ff9650]">
             <span className="text-xs sm:text-sm font-medium">18+</span>
           </div>
         )}
@@ -464,7 +464,7 @@ function NetflixStyleDetails({ data, id, session, list, setList, url }) {
                 <ModalBody className=''>
                   <div className="text-center flex flex-col justify-center items-center">
                     <p className="text-base sm:text-lg mb-3">Login to edit your list.</p>
-                    <button className="font-semibold outline-none border-none py-2 px-4 bg-[#1a365d] rounded-md flex items-center" onClick={() => signIn('AniListProvider')}>
+                    <button className="font-semibold outline-none border-none py-2 px-4 bg-[#ff9650] rounded-md flex items-center" onClick={() => signIn('AniListProvider')}>
                       <Image alt="anilist-icon" loading="lazy" width="25" height="25" src="/anilist.svg" className='mr-2' />
                       Login With Anilist</button>
                   </div>

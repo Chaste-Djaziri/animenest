@@ -21,7 +21,7 @@ function UserInfo({ lists, session }) {
                         <div
                             key={tab.name}
                             className={[
-                                "relative p-1 my-1 mx-3 cursor-pointer text-[#A1A1AA] transition-opacity duration-250 ease-in-out hover:opacity-60 text-lg sm:text-xl font-medium",
+                                "relative p-1 my-1 mx-3 cursor-pointer text-[#FF9650] transition-opacity duration-250 ease-in-out hover:opacity-60 text-lg sm:text-xl font-medium",
                                 isSelected(tab) ? "!text-white !opacity-100" : "",
                             ].join(" ")}
                         >

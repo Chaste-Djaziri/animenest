@@ -43,7 +43,7 @@ function NetflixStyleNewsDetails({ data, id, session }) {
             {/* Netflix-style metadata row */}
             <div className="flex items-center gap-3 text-sm text-[#ddd] mb-4 flex-wrap">
               {data.format && (
-                <span className="text-[#1a365d] font-medium">
+                <span className="text-[#ff9650] font-medium">
                   {data.format.replace(/_/g, ' ')}
                 </span>
               )}
@@ -59,7 +59,7 @@ function NetflixStyleNewsDetails({ data, id, session }) {
             {/* Description */}
             {data.description && (
               <div 
-                className="text-[#ddd] text-base mb-6 max-w-2xl leading-relaxed prose prose-invert prose-p:text-[#ddd] prose-a:text-[#1a365d] prose-headings:text-white max-h-[150px] overflow-y-auto custom-scrollbar"
+                className="text-[#ddd] text-base mb-6 max-w-2xl leading-relaxed prose prose-invert prose-p:text-[#ddd] prose-a:text-[#ff9650] prose-headings:text-white max-h-[150px] overflow-y-auto custom-scrollbar"
                 dangerouslySetInnerHTML={createMarkup(data.description)}
               ></div>
             )}
@@ -100,7 +100,7 @@ function NetflixStyleNewsDetails({ data, id, session }) {
         {/* Trailer Section */}
         {data.trailer && data.trailer.site === "youtube" && (
           <div className="px-4 sm:px-8 md:px-12 py-6 sm:py-8 border-b border-[#333]">
-            <h2 className="text-lg sm:text-xl font-medium text-white mb-4 sm:mb-6 border-l-4 border-[#1a365d] pl-4">Trailer</h2>
+            <h2 className="text-lg sm:text-xl font-medium text-white mb-4 sm:mb-6 border-l-4 border-[#ff9650] pl-4">Trailer</h2>
             <div className="aspect-w-16 aspect-h-9">
               <iframe
                 src={`https://www.youtube.com/embed/${data.trailer.id}`}
@@ -118,13 +118,13 @@ function NetflixStyleNewsDetails({ data, id, session }) {
         <div className="px-4 sm:px-8 md:px-12 py-6 sm:py-8 border-b border-[#333]">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             <div className="lg:col-span-2">
-              <h2 className="text-lg sm:text-xl font-medium text-white mb-3 sm:mb-4 border-l-4 border-[#1a365d] pl-4">
+              <h2 className="text-lg sm:text-xl font-medium text-white mb-3 sm:mb-4 border-l-4 border-[#ff9650] pl-4">
                 About {data.title?.english || data.title?.romaji}
               </h2>
               
               {data.description ? (
                 <div 
-                  className="text-[#999] text-sm sm:text-base leading-relaxed mb-4 sm:mb-6 prose prose-invert prose-p:text-[#999] prose-a:text-[#1a365d] prose-headings:text-white max-w-none"
+                  className="text-[#999] text-sm sm:text-base leading-relaxed mb-4 sm:mb-6 prose prose-invert prose-p:text-[#999] prose-a:text-[#ff9650] prose-headings:text-white max-w-none"
                   dangerouslySetInnerHTML={createMarkup(data.description)}
                 ></div>
               ) : (
@@ -209,8 +209,8 @@ function NetflixStyleNewsDetails({ data, id, session }) {
         {/* Characters Section */}
         {data?.characters?.edges?.length > 0 && (
           <div className="px-4 sm:px-8 md:px-12 py-6 sm:py-8 border-b border-[#333]">
-            <h2 className="text-lg sm:text-xl font-medium text-white mb-4 sm:mb-6 border-l-4 border-[#1a365d] pl-4">
-              <FontAwesomeIcon icon={faUsers} className="mr-2 text-[#1a365d]" />
+            <h2 className="text-lg sm:text-xl font-medium text-white mb-4 sm:mb-6 border-l-4 border-[#ff9650] pl-4">
+              <FontAwesomeIcon icon={faUsers} className="mr-2 text-[#ff9650]" />
               Cast
             </h2>
             <Characters data={data?.characters?.edges} />
@@ -220,8 +220,8 @@ function NetflixStyleNewsDetails({ data, id, session }) {
         {/* Recommendations Section */}
         {data?.recommendations?.nodes?.length > 0 && (
           <div className="px-4 sm:px-8 md:px-12 py-6 sm:py-8">
-            <h2 className="text-lg sm:text-xl font-medium text-white mb-4 sm:mb-6 border-l-4 border-[#1a365d] pl-4">
-              <FontAwesomeIcon icon={faThumbsUp} className="mr-2 text-[#1a365d]" />
+            <h2 className="text-lg sm:text-xl font-medium text-white mb-4 sm:mb-6 border-l-4 border-[#ff9650] pl-4">
+              <FontAwesomeIcon icon={faThumbsUp} className="mr-2 text-[#ff9650]" />
               More Like This
             </h2>
             <Animecards data={data.recommendations.nodes} cardid="Recommendations" show={false} />

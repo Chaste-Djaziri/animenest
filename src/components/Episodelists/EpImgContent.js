@@ -49,7 +49,7 @@ function EpImgContent({ data, epdata, defaultProvider, subtype, epnum, progress 
               <div className={styles.epimgtitle}>{episode?.number}. {episode?.title || "Episode " + episode?.number}</div>
               <div className={styles.epimgdescription}>{episode?.description}</div>
               {episode?.isFiller === true &&
-                <span className='p-1 px-2 text-xs mt-1 rounded-xl bg-[#1a365d] font-semibold w-min inline-block'>Filler</span>
+                <span className='p-1 px-2 text-xs mt-1 rounded-xl bg-[#ff9650] font-semibold w-min inline-block'>Filler</span>
               }
             </div>
           </Link>

@@ -185,13 +185,13 @@ function PlayerComponent({ id, epId, provider, epNum, subdub, data, session, sav
                         <div className="h-full w-full rounded-md relative flex items-center text-xl justify-center aspect-video border border-solid border-[#333] bg-[#141414] shadow-lg">
                             {!loading && error ? (
                                 <div className='text-sm sm:text-base px-2 flex flex-col items-center text-center'>
-                                    <FontAwesomeIcon icon={faCircleExclamation} className="text-[#1a365d] text-4xl mb-4" />
+                                    <FontAwesomeIcon icon={faCircleExclamation} className="text-[#ff9650] text-4xl mb-4" />
                                     <p className='mb-3 text-xl font-medium'>Failed to load episode</p>
                                     <p className='text-[#999] mb-2'>Please try again later or choose a different server.</p>
                                     <p className='text-[#999] text-sm'>If the problem persists, consider changing servers.</p>
                                 </div>) : (
                                 <div className="pointer-events-none absolute inset-0 z-50 flex h-full w-full items-center justify-center">
-                                    <Spinner.Root className="text-[#1a365d] animate-spin opacity-100" size={84}>
+                                    <Spinner.Root className="text-[#ff9650] animate-spin opacity-100" size={84}>
                                         <Spinner.Track className="opacity-25" width={8} />
                                         <Spinner.TrackFill className="opacity-75" width={8} />
                                     </Spinner.Root>

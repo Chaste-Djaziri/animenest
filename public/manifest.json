@@ -1,8 +1,8 @@
 {
     "id":"1",
-    "name": "SkyAnime",
-    "short_name": "SkyAnime",
-    "description": "Watch Anime Online for free without ads on SkyAnime",
+    "name": "ANINEST",
+    "short_name": "ANINEST",
+    "description": "Watch Anime Online for free without ads on ANINEST",
     "icons": [
         {
             "src": "/icon-192x192.png",
@@ -29,7 +29,7 @@
             "purpose": "maskable"
         }
     ],
-    "theme_color": "#1a365d",
+    "theme_color": "#ff9650",
     "background_color": "#000000",
     "start_url": "/",
     "display": "standalone",

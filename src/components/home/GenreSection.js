@@ -15,12 +15,12 @@ function GenreSection({ animeList, genre = "Action" }) {
         <div className="flex items-center gap-2">
           <span className="h-6 md:h-8 rounded-md w-[.35rem] md:w-[.3rem] bg-white"></span>
           <h2 className="text-xl md:text-2xl font-medium">{genre} Anime</h2>
-          <div className="flex items-center bg-[#1a365d] px-2 py-1 rounded-full ml-2 text-xs text-white">
+          <div className="flex items-center bg-[#ff9650] px-2 py-1 rounded-full ml-2 text-xs text-white">
             <FontAwesomeIcon icon={faTag} className="mr-1" />
             <span>Popular Genre</span>
           </div>
         </div>
-        <Link href={`/anime/catalog?genres=${genre}`} className="flex items-center gap-1 text-sm text-[#1a365d] hover:underline">
+        <Link href={`/anime/catalog?genres=${genre}`} className="flex items-center gap-1 text-sm text-[#ff9650] hover:underline">
           <span>View All</span>
           <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
         </Link>
@@ -39,7 +39,7 @@ function GenreSection({ animeList, genre = "Action" }) {
               key={anime.id} 
               className="flex-shrink-0 w-[220px] snap-start group"
             >
-              <div className="bg-[#000000] rounded-lg overflow-hidden border border-[#222] hover:border-[#1a365d] transition-all duration-300 h-full flex flex-col transform group-hover:scale-[1.02]">
+              <div className="bg-[#000000] rounded-lg overflow-hidden border border-[#222] hover:border-[#ff9650] transition-all duration-300 h-full flex flex-col transform group-hover:scale-[1.02]">
                 {/* Image with gradient overlay */}
                 <div className="relative w-full h-[300px]">
                   <img 
@@ -62,7 +62,7 @@ function GenreSection({ animeList, genre = "Action" }) {
                   {/* Studio */}
                   {anime.studios?.nodes?.[0] && (
                     <div className="absolute bottom-2 left-2">
-                      <div className="bg-[#1a365d]/80 backdrop-blur-sm px-2 py-1 rounded text-white text-xs">
+                      <div className="bg-[#ff9650]/80 backdrop-blur-sm px-2 py-1 rounded text-white text-xs">
                         {anime.studios.nodes[0].name}
                       </div>
                     </div>
@@ -70,13 +70,13 @@ function GenreSection({ animeList, genre = "Action" }) {
                 </div>
                 
                 <div className="p-3 flex flex-col">
-                  <h3 className="text-sm font-medium text-white line-clamp-2 group-hover:text-[#1a365d] transition-colors">
+                  <h3 className="text-sm font-medium text-white line-clamp-2 group-hover:text-[#ff9650] transition-colors">
                     {anime.title?.english || anime.title?.romaji}
                   </h3>
                   
                   <div className="flex flex-wrap gap-1.5 mt-2">
                     {anime.format && (
-                      <span className="px-2 py-0.5 bg-[#1a365d]/20 text-[#1a365d] rounded-full text-xs">
+                      <span className="px-2 py-0.5 bg-[#ff9650]/20 text-[#ff9650] rounded-full text-xs">
                         {anime.format.replace(/_/g, ' ')}
                       </span>
                     )}
