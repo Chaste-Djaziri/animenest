@@ -6,28 +6,28 @@ export default async function sitemap() {
 
   const trending = data.map((anime)=>{
     return {
-      url: `https://ANINEST.site/anime/info/${anime.id}`,
+      url: `https://anime.micorp.pro/anime/info/${anime.id}`,
       lastModified: new Date(),
     }
   })
 
   const top100 = data2.map((anime)=>{
     return {
-      url: `https://ANINEST.site/anime/info/${anime.id}`,
+      url: `https://anime.micorp.pro/anime/info/${anime.id}`,
       lastModified: new Date(),
     }
   })
 
   const seasonal = data3.map((anime)=>{
     return {
-      url: `https://ANINEST.site/anime/info/${anime.id}`,
+      url: `https://anime.micorp.pro/anime/info/${anime.id}`,
       lastModified: new Date(),
     }
   })
 
     return [
       {
-        url: 'https://ANINEST.site',
+        url: 'https://anime.micorp.pro',
         lastModified: new Date(),
         changeFrequency: 'yearly',
         priority: 1,
