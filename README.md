@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://ANINEST.com" target="_blank">
+  <a href="https://anime.micorp.pro" target="_blank">
     <img src="https://github.com/EternalAnime/ANINEST-best-verse-/blob/main/public/android-chrome-512x512.png" alt="Logo" width="140" height="140">
   </a>
 🌌 ANINEST
@@ -118,7 +118,7 @@ Instagram: @the._.voidborn
 
 Discord Server: Join ANINEST discord.gg/soupfr
 
-Official Site: https://ANINEST.com
+Official Site: https://anime.micorp.pro
 
 📢 Disclaimer
 ⚠️ This project is made strictly for educational and personal learning purposes.

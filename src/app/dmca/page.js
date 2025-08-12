@@ -84,8 +84,8 @@ function page() {
           content on our website infringes upon your intellectual property
           rights and you hold the copyright for that content, please report it
           to{" "}
-          <Link href="mailto:contact@ANINEST.com" className="text-white">
-            contact@ANINEST.com
+          <Link href="mailto:contact@anime.micorp.pro" className="text-white">
+            contact@anime.micorp.pro
           </Link>{" "}
           and the content will be immediately removed.
         </p>

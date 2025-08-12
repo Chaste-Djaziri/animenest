@@ -5,6 +5,6 @@ export default function robots() {
         allow: '/',
         disallow: [ '/anime/', '/api/' ],
       },
-      sitemap: 'https://ANINEST.com/sitemap.xml',
+      sitemap: 'https://anime.micorp.pro/sitemap.xml',
     }
   }
